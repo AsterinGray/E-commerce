@@ -1,0 +1,175 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 5rem;
+    min-height: 90vh;
+}
+
+.cart{
+    width: 65%;
+}
+
+.cart-head{
+    display: flex;
+    align-content: center;
+    padding: .5rem 2rem;
+    box-shadow: 0px 0px 10px gainsboro;
+    background-color: #ECB28B;
+    color: white;
+    font: 1.5rem GothamBold;
+}
+
+.cart-head>img{
+    width: 2rem;
+    filter: brightness(0) invert(1);
+}
+
+.cart-head>p{
+    margin: .5rem;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.cart-item>img{
+    width: 10rem;
+}
+
+.cart-item-description>h1{
+    font: 2rem GothamBold;
+    margin: .5rem 0;
+}
+
+.cart-item-description>p{
+    font: 1.5rem GothamLight;
+    margin: 0;
+}
+
+.cart-item-qty{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    font: 1.2rem GothamLight;
+    background-color: red;
+}
+
+.cart-item-qty>input{
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 10px gainsboro;
+    height: 2rem;
+    border: none;
+    font: 1rem GothamLight;
+}
+
+.cart-item-qty>input:focus{
+    outline: none;
+}
+
+.cart-item-qty>input::-webkit-outer-spin-button,
+.cart-item-qty>input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.cart-item-qty>input[type="button"]{
+    font: 1em GothamBold;
+    background-color: #ECB28B;
+    border: solid #ECB28B;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.cart-item-qty>input[type="button"]:focus{
+    background-color: rgb(207, 151, 114);
+}
+
+.checkout{
+    width: 30%;
+    margin-left: auto;
+}
+
+.checkout-head{
+    background-color: #1F253D;
+    color: white;
+    display: flex;
+    align-content: center;
+    font: 1.5rem GothamBold;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.checkout-head>p{
+    margin: 0;
+}
+
+.checkout-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    margin: .5rem 0;
+    background-color: #FDF7F3;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+.checkout-content>select{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    font: 1rem GothamLight;
+}
+
+.checkout-content>button{
+    border: none;
+    background-color: #1F253D;
+    font: 1.5rem GothamLight;
+    color: white;
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+    border-radius: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .content{
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .cart{
+        width: 100%;
+    }
+
+    .cart-item{
+        padding: .5rem;
+    }
+
+    .cart-item>img{
+        width: 5rem;
+    }
+
+    .cart-item-description>h1{
+        font: 1rem GothamBold;
+    }
+
+    .cart-item-description>p{
+        font: .8rem GothamLight;
+    }
+
+    .cart-item-qty{
+        margin-right: .5rem;
+        width: 30%;
+    }
+
+    .checkout{
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
